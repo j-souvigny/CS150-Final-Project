@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Number Systems Converter</title>
+
+
+</head>
+
+
+<body style="background-image: url('background.jpg');">
+
+<h1 style="color:white">Number Systems Converter - Convert Binary, Decimal, and Hexadecimal Systems<br>
+
+</h1>
+
+<br>
+
+<form style="color:white" action="converter.cgi" id="converter" method="get" enctype="multipart/form-data">
+Select Departure Number System:<select name="insystem" form="converter">
+						<option value="Decimal">Decimal</option>
+						<option value="Binary">Binary</option>
+						<option value="Hexadecimal">Hexadecimal</option>
+					 </select> <br>
+  <br>
+
+Select Destination Number System:<select name="outsystem" form="converter">
+						<option value="Decimal">Decimal</option>
+					 	<option value="Binary">Binary</option>
+						<option value="Hexadecimal">Hexadecimal</option>
+					 </select><br>
+  <br>
+  
+Input Number:<input maxlength="60" size = "60" value="Number To Be Converted" name="innumber"> <br>
+
+  <br> 
+
+&nbsp; <input value="Convert" type="submit"><br>
+
+<br>
+
+<span style="color: white; font-size: 25"> {insystem} number {innumber} converted to {outsystem} is {outnumber}. </span>
+</form>
+
+</body>
+</html>
